@@ -1,0 +1,35 @@
+/* 2340x1080 pixels at 476ppi  */
+@media only screen 
+	and (device-width: 375px) 
+	and (device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3) {
+			.body {
+				padding-bottom: max(12px, env(safe-area-inset-bottom));
+				padding-left: max(12px, env(safe-area-inset-left));
+				padding-right: max(12px, env(safe-area-inset-right));
+			}
+	}
+
+/* 2532x1170 pixels at 460ppi */
+@media only screen 
+	and (device-width: 390px) 
+	and (device-height: 844px) 
+	and (-webkit-device-pixel-ratio: 3) {
+		.body {
+			padding-bottom: max(12px, env(safe-area-inset-bottom));
+			padding-left: max(12px, env(safe-area-inset-left));
+			padding-right: max(12px, env(safe-area-inset-right));
+		}
+	 }
+
+/* 2778x1284 pixels at 458ppi */
+@media only screen 
+	and (device-width: 428px) 
+	and (device-height: 926px) 
+	and (-webkit-device-pixel-ratio: 3) {
+		.body {
+			padding-bottom: max(12px, env(safe-area-inset-bottom));
+			padding-left: max(12px, env(safe-area-inset-left));
+			padding-right: max(12px, env(safe-area-inset-right));
+		}
+	 }

@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
+
+    <!-- Title -->
+    <title>ESBL – pasientinformasjon</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico?v=2" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="./ressurser/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./ressurser/css/hs-mega-menu.min.css" />
+    <link rel="stylesheet" href="./ressurser/css/aos.css" />
+    <link rel="stylesheet" href="./ressurser/css/leaflet.css" />
+    <link rel="stylesheet" href="./ressurser/css/hs-video-bg.min.css" />
+
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="./ressurser/css/theme.min.css" />
+    <link rel="stylesheet" href="./ressurser/css/media.css" />
+    <style>
+      .html {
+        padding:
+          env(safe-area-inset-top, 20px)
+          env(safe-area-inset-right, 20px)
+          env(safe-area-inset-bottom, 20px)
+          env(safe-area-inset-left, 20px);
+      }
+    </style>
+  </head>
+
+  <body id="homeSection" class="mainBody position-relative">
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="navbar navbar-expand-md navbar-end navbar-sticky-top navbar-dark navbar-show-hide navbar-toggle"
+        data-hs-header-options='{
+          "fixMoment": 1000,
+          "fixEffect": "slide"
+        }'>
+      <div class="container">
+        <nav class="js-mega-menu navbar-nav-wrap">
+          <!-- Default Logo -->
+          <a class="navbar-brand" href="../index.html" aria-label="ESBL">
+            <img class="navbar-brand-logo" src="../ressurser/svg/logo/logo-white.svg" alt="ESBL">
+          </a>
+          <!-- End Default Logo -->
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-default ">
+              <i class="bi-list"></i>
+            </span>
+            <span class="navbar-toggler-toggled">
+              <i class="bi-x"></i>
+            </span>
+          </button>
+          <!-- End Toggler -->
+    
+          <!-- Collapse -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              
+              <!-- Company -->
+              <li class="nav-item">
+                <a id="hjemLenke" class="nav-link active" aria-current="page" href="/" role="button">Hjem</a>
+              </li>
+              <!-- End Company -->
+    
+              <!-- Account -->
+              <li class="d-none d-sm-block hs-has-mega-menu nav-item">
+                 <a class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" id="navbarWithMegaMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Meny</a>
+     
+                 <!-- Mega Menu -->
+                 <div class="hs-mega-menu hs-position-right dropdown-menu w-100" aria-labelledby="navbarWithMegaMenu" data-bs-auto-close="true">
+                   <!-- Main Content -->
+                   <div class="navbar-dropdown-menu-inner">
+                     <div class="row">
+                       <div class="col-sm-6 col-md">
+                         <span class="dropdown-header text-primary">Om ESBL</span>
+                         <a class="dropdown-item" href="#omESBL">Hva er ESBL?</a>
+                         <a class="dropdown-item" href="#omSmitte">Hvordan smitter ESBL?</a>
+                         <a class="dropdown-item" href="#omBehandling">Hvordan behandles ESBL?</a>
+                         <a class="dropdown-item" href="#blirEnKvitt">Blir jeg kvitt ESBL</a>
+                         <a class="dropdown-item" href="#erDetFarlig">Er ESBL farlig?</a>
+                       </div>
+     
+                       <div class="col-sm-6 col-md mb-3 mb-md-0">
+                         <span class="dropdown-header text-primary">Dagliglivet</span>
+                         <a class="dropdown-item" href="#dagliglivetInfo">I dagliglivet</a>
+                         <a class="dropdown-item" href="#dagliglivetHjemme">Hjemme</a>
+                         <a class="dropdown-item" href="#dagliglivetFamiliePartner">Familie og partner</a>
+                         <a class="dropdown-item" href="#dagliglivetArbeidSkole">Arbeid og skole</a>
+                         <a class="dropdown-item" href="#dagliglivetSamfunnet">I samfunnet</a>
+                       </div>
+     
+                       <div class="col-sm-6 col-md mb-3 mb-md-0">
+                         <span class="dropdown-header text-primary">Helsevesenet</span>
+                         <a class="dropdown-item" href="#helsevesenetInfo">Helsevesenet</a>
+                         <a class="dropdown-item" href="#helsevesenetSykehus">På sykehus</a>
+                         <a class="dropdown-item" href="#helsevesenetSykehjem">På sykehjem</a>
+                         <a class="dropdown-item" href="#helsevesenetHjemmetjenesten">I hjemmetjenesten</a>
+                         <a class="dropdown-item" href="#helsevesenetLegekontor">På legekotor og lignende</a>
+                       </div>
+     
+                       <div class="col-sm-6 col-md">
+                         <span class="dropdown-header text-primary">Ressurser</span>
+                         <a class="dropdown-item" href="#ressurser">Ressurser</a>
+                         <a class="dropdown-item" href="#ressurserVideo">Video om håndbygiene</a>
+                         <a class="dropdown-item" href="#ressurserLenker">Lenker</a>
+                         <a class="dropdown-item" href="#ressurserPlakater">Plakater</a>
+                       </div>
+                     </div>
+                     <!-- End Row -->
+                   </div>
+                   <!-- End Main Content -->
+                 </div>
+                 <!-- End Mega Menu -->
+                 
+                 <!-- Company -->
+                 <li class="d-md-none hs-has-sub-menu nav-item">
+                   <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Om ESBL</a>
+       
+                   <!-- Mega Menu -->
+                   <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+                     <a class="dropdown-item" href="#omESBL">Hva er ESBL?</a>
+                      <a class="dropdown-item" href="#omSmitte">Hvordan smitter ESBL?</a>
+                      <a class="dropdown-item" href="#omBehandling">Hvordan behandles ESBL?</a>
+                      <a class="dropdown-item" href="#blirEnKvitt">Blir en kvitt ESBL</a>
+                      <a class="dropdown-item" href="#erDetFarlig">Er ESBL farlig?</a>
+                   </div>
+                   <!-- End Mega Menu -->
+                 </li>
+                 <!-- End Company -->
+                 
+                 <!-- Company -->
+                  <li class="d-md-none hs-has-sub-menu nav-item">
+                    <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">I dagliglivet</a>
+        
+                    <!-- Mega Menu -->
+                    <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+                      <a class="dropdown-item" href="#dagliglivetInfo">I dagliglivet</a>
+                       <a class="dropdown-item" href="#dagliglivetHjemme">Hjemme</a>
+                       <a class="dropdown-item" href="#dagliglivetFamiliePartner">Familie og partner</a>
+                       <a class="dropdown-item" href="#dagliglivetArbeidSkole">Arbeid og skole</a>
+                       <a class="dropdown-item" href="#dagliglivetSamfunnet">Samfunnet</a>
+                    </div>
+                    <!-- End Mega Menu -->
+                  </li>
+                  <!-- End Company -->
+                  
+                  <!-- Company -->
+                   <li class="d-md-none hs-has-sub-menu nav-item">
+                     <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">I helsevesenet</a>
+         
+                     <!-- Mega Menu -->
+                     <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+                       <a class="dropdown-item" href="#helsevesenetInfo">Helsevesenet</a>
+                        <a class="dropdown-item" href="#helsevesenetSykehus">På sykehus</a>
+                        <a class="dropdown-item" href="#helsevesenetSykehjem">På sykehjem</a>
+                        <a class="dropdown-item" href="#helsevesenetHjemmetjenesten">I hjemmetjenesten</a>
+                        <a class="dropdown-item" href="#helsevesenetLegekontor">På legekotor og lignende</a>
+                     </div>
+                     <!-- End Mega Menu -->
+                   </li>
+                   <!-- End Company -->
+                   
+                   <!-- Company -->
+                    <li class="d-md-none hs-has-sub-menu nav-item">
+                      <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ressurser</a>
+          
+                      <!-- Mega Menu -->
+                      <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+                        <a class="dropdown-item" href="#ressurser">Ressurser</a>
+                         <a class="dropdown-item" href="#ressurserVideo">Video om håndbygiene</a>
+                         <a class="dropdown-item" href="#ressurserLenker">Lenker</a>
+                         <a class="dropdown-item" href="#ressurserPlakater">Plakater</a>
+                      </div>
+                      <!-- End Mega Menu -->
+                    </li>
+                    <!-- End Company -->
+                 
+                 
+               </li>
+              <!-- End Account -->
+            </ul>
+          </div>
+          <!-- End Collapse -->
+        </nav>
+      </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main">
+      <!-- Hero -->
+      <div class="position-relative bg-dark overflow-hidden" style="background-image: url(../ressurser/svg/components/wave-pattern-light.svg);">
+        <div class="container position-relative zi-2 content-space-t-3 content-space-t-lg-4 content-space-b-2 content-space-b-md-3">
+          <div class="row align-items-lg-center">
+            <div class="col-lg-5 mb-7 mb-lg-0">
+              <div class="d-block d-lg-none" style="height: 5vh;">
+              </div>
+              <!-- Heading -->
+              <div class="mb-6">
+                <h1 class="display-6 text-white">
+                  ESBL-bærerskap
+                  <br />
+                  <span class="text-warning text-highlight-primary">
+                    <span
+                      class="js-typedjs"
+                      data-hs-typed-options='{
+                          "strings": ["hva er det?", "er det farlig?", "hvordan smitter det?", "kan jeg jobbe?", "hva skal jeg gjøre?"],
+                          "typeSpeed": 60,
+                          "loop": true,
+                          "backSpeed": 25,
+                          "backDelay": 1500
+                        }'
+                    ></span>
+                  </span>
+                </h1>
+                <p class="lead text-white-70">
+                  Informasjon til deg som lever med ESBL, og for deg som er pårørende.
+                </p>
+              </div>
+              <!-- End Title & Description -->
+
+              <div class="d-inline gap-3">
+                <a class="btn btn-primary btn-transition" href="#omESBL">Les mer<i class="bi-chevron-down small ms-1"></i></a>
+                <a class="btn btn-ghost-light btn-transition" data-bs-toggle="modal" data-bs-target="#omSidenModal">Om siden <i class="bi-info-circle small ms-1"></i></a>
+              </div>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-lg-7">
+              <div class="position-relative">
+                <div class="">
+                  <div class="position-relative align-items-end">
+                    <img class="min-width-75 img-fluid rounded-2" src="../ressurser/bilder/1618x1010/esbl.png" alt="Illustrasjon av ESBL-bakterie. Foto: CDC, via Unsplash."/>
+                    <div class="d-none d-sm-block position-absolute bottom-0 end-0 zi-1 mb-n5 me-n5" style="max-width: 30rem;" data-aos="fade-up" data-aos-delay="100">
+                      <!-- Card -->
+                      <div class="card bg-transparent" style="background-image: url(../ressurser/svg/components/wave-pattern-light.svg);">
+                        <div class="card-body text-light">
+                          <p class="card-text small">Foto av <a class="text-light text-highlight-light" href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> på <a class="text-light text-highlight-light" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>&nbsp;
+                          </p>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+                    </div>
+                    <div
+                      class="position-absolute top-0 end-0 w-100 h-100 bg-soft-primary rounded-2 zi-n1 mt-5 me-n5"
+                    ></div>
+                  </div>
+                </div>
+                <!-- End Col -->
+              </div>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <!-- Shape -->
+        <div class="shape shape-bottom zi-1">
+          <svg
+            width="3000"
+            height="500"
+            viewBox="0 0 3000 500"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 500H3000V0L0 500Z" fill="#fff" />
+          </svg>
+        </div>
+        <!-- End Shape -->
+      </div>
+      <!-- End Hero -->
+
+      <div id="omESBL">
+        <div
+          class="mx-3 mx-xl-10"
+          style="
+            background-image: url(../ressurser/svg/components/wave-pattern-light.svg);
+          "
+        >
+          <div
+            class="
+              bg-soft-secondary
+              rounded-2
+              container-lg container-fluid
+              content-space-1 content-space-md-2
+              px-4 px-md-4 px-lg-10
+            "
+          >
+
+            <!-- Swiper Slider -->
+            <div id="omESBL">
+              <!-- Card -->
+              <div class="card text-center">
+                <div class="card-body">
+                  <div class="mb-2">
+                    <img
+                      class="img-fluid"
+                      src="../ressurser/bilder/illustrations/book.png"
+                      alt="Illustrasjon av person som blar i leksikon"
+                      style="height: 7rem"
+                    />
+                    <h2 class="h1 mt-3">Hva er ESBL?</h2>
+                  </div>
+                  <p>
+                    ESBL står for <span class="text-primary">e</span>xtended <span class="text-primary">s</span>pectrum <span class="text-primary">b</span>eta<span class="text-primary">l</span>aktamase, eller betalaktamaser med utvidet spektrum på norsk. Det er en type enzymer som produseres av noen typer bakterier og gjør de motstandsdyktige mot de mest brukte antibiotikaene våre. Konsekvensen blir at infeksjoner forårsaket av ESBL blir vanskeligere å behandle.
+                  </p>
+                  <p>
+                    Vi deler ESBL inn i tre undergruper, ESBL<sub class="text-warning">A</sub>, ESBL<sub class="text-warning">M</sub> og ESBL<sub class="text-danger">KARBA</sub>, hvor den siste er den mest motstandsdyktige. Du trenger ikke forholde deg til hvilken type du er bærer av i hverdagen, men helsepersonell kan sette i gang strengere tiltak avhengig av hvilken type det er snakk om.
+                  </p>
+                  <p>
+                    ESBL-produserende bakterier finnes naturlig i tarmen, uten at de forårsaker infeksjoner. Disse bakteriene kan skilles ut med avføringen, og kan finnes på huden, i urin, sår og spytt. Så lenge de bare er en del av tarmfloraen er de ikke farlige, og gir ingen symptomer. Da trengs det heller ingen behandling.
+                  </p>
+                </div>
+              </div>
+              <!-- End Card -->
+               <div
+                class="container content-space-1 content-space-lg-1">
+                <div class="w-lg-75 mx-lg-auto">
+                  <div class="row">
+                    <div class="mb-8">
+                        <div id="omSmitte" class="anchor"></div>
+                        <h4 class="">Hvordan smitter det?</h4>
+                        <p>
+                          Mangelfull håndhygiene, dårlig rengjort utstyr og
+                          kontaktpunkter er viktigste årsak til spredning av
+                          antibiotikaresistente bakterier.
+                        </p>
+                        <p>
+                          En vil også kunne finne ESBL i omgivelsene til den
+                          som er smittebærer. For eksempel på sengetøy, klær,
+                          lysbrytere, dørhåndtak og andre berøringspunkter.
+                        </p>
+                    </div>
+                    <div class="mb-8">
+                    <div id="omBehandling" class="anchor"></div>
+                    <h4 class="">Hvordan behandles ESBL?</h4>
+                    <p class="">
+                      Siden ESBL-produserende bakterier er motstandsdyktige
+                      mot de vanligste antibiotikaene må vi bruke andre,
+                      mindre optimale typer for å behandle infeksjonen.
+                    </p>
+                    <p>
+                      Ofte brukes mer bredspektrede typer antibiotika, som
+                      også virker på bakterier vi ikke ønsker å fjerne. Det
+                      blir som å skyte på blink med hagle. Behandlingen tar
+                      lengre tid, og vi må oftere bruke intravenøs
+                      antibiotika fremfor tabletter.
+                    </p>
+                    <p>
+                      Vi behandler infeksjoner forårsaket av ESBL-produserende bakterier, men vi behandler ikke bærerskap.
+                    </p>
+                  </div>
+                  <div class="mb-8">
+                    <div id="blirEnKvitt" class="anchor"></div>
+                    <h4 class="">Blir en kvitt det?</h4>
+                    <p>
+                      Når en ikke er syk med infeksjon forårsaket av
+                      ESBL-produserente bakterier klarer vi ikke å påvise
+                      EBSL med eksisterende tester. Derfor kan vi heller
+                      ikke med sikkerhet si at en ved behandling blir helt
+                      kvitt det.
+                    </p>
+                    <p>
+                      Ved påvist ESBL regnes en derfor som livsvarig bærer.
+                    </p>
+                  </div>
+                    <div class="mb-8">
+                      <div id="erDetFarlig" class="anchor"></div>
+                      <h4 class="">Er det farlig?</h4>
+                      <p class="">
+                        ESBL-produserende bakterier er ikke farlige når de er en del av normalfloraen i tarmen. Vi ønsker likevel ikke spredning i sykehus; det er vanskeligere å behandle infeksjoner forårsaket av ESBL-produserende bakterier siden det er få gode alternativer av antibiotika. 
+                      </p>
+                      <p>
+                        Bekymringen rundt ESBL-produserende bakterier er at det blir vanskeligere og tar lengre tid å behandle infeksjoner som er forårsaket av disse bakteriene. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <span class="divider-center mt-4 mb-4"></span>
+      
+      <div id="dagliglivetInfo">
+        <!-- Hero -->
+        <div class="position-relative bg-soft-primary overflow-hidden" style="background-image: url(../ressurser/svg/components/wave-pattern-light.svg);">
+          <div class="container position-relative zi-2
+              content-space-t-3
+              content-space-t-lg-4
+              content-space-b-2
+              content-space-b-md-3">
+            <div class="row align-items-lg-center">
+              <div class="col-lg-5 mb-7 mb-lg-0">
+                <!-- Heading -->
+                <div class="mb-6">
+                  <h1 class="display-6 text-primary">
+                    ESBL i dagliglivet
+                  </h1>
+  
+                  <p class="lead text-primary-70">
+                    Etter å ha fått påvist ESBL-bærerskap vil du høre at du kan leve som normalt. 
+                  </p>
+                  <p class="lead text-primary-70">
+                    Hva betyr det, og hvordan skal du forholde deg til ESBL i hverdagen?
+                  </p>
+                </div>
+                <!-- End Title & Description -->
+              </div>
+              <!-- End Col -->
+  
+              <div class="col-lg-7">
+                <div class="position-relative">
+                  <div class="">
+                    <div class="position-relative align-items-end">
+                      <img
+                        class="min-width-75 img-fluid rounded-2"
+                        src="../ressurser/bilder/1618x1010/dagligliv.png"
+                        alt="Bilde av person som står på en brygge og skuer ut over snødekte fjell. Foto: Callum Stewart"
+                      />
+                      <div class="d-none d-sm-block position-absolute bottom-0 end-0 zi-1 mb-n5 me-n5" style="max-width: 30rem;" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Card -->
+                        <div class="card bg-transparent" style="background-image: url(../ressurser/svg/components/wave-pattern-light.svg);">
+                          <div class="card-body text-light">
+                            <p class="card-text small">Foto av <a class="text-light text-highlight-light" href="https://unsplash.com/@callumstewartni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Callum Stewart</a> på <a class="text-light text-highlight-light" href="https://unsplash.com/s/photos/norway-human?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>&nbsp;
+                            </p>
+                          </div>
+                        </div>
+                        <!-- End Card -->
+                      </div>
+                      <div
+                        class="
+                          position-absolute
+                          top-0
+                          end-0
+                          w-100
+                          h-100
+                          bg-soft-primary
+                          rounded-2
+                          zi-n1
+                          mt-5
+                          me-n5
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <!-- End Col -->
+                </div>
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+  
+          <!-- Shape -->
+          <div class="shape shape-bottom zi-1">
+            <svg
+              width="3000"
+              height="500"
+              viewBox="0 0 3000 500"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 500H3000V0L0 500Z" fill="#fff" />
+            </svg>
+          </div>
+          <!-- End Shape -->
+        </div>
+        <!-- End Hero -->
+        
+        <!-- Info -->
+        <div id="dagliglivetHjemme" class="anchor"></div>
+        <div class="container content-space-2 content-space-lg-3">
+          <div class="row justify-content-lg-between">
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <h2>Hjemme</h2>
+            </div>
+            <!-- End Col -->
+        
+            <div class="col-lg-8">
+              <p>ESBL er først og fremst et sykehusproblem og utgjør ingen risiko for friske personer. Det er kun i sykehus det vil være særskilte tiltak rundt en som er bærer av ESBL.
+                Hvis man er frisk, er risikoen liten for at andre i ditt nærmiljø (også ved intimkontakt) blir smittet.
+              </p>
+              <p>
+                Hjemme kan en leve som normalt, men det er likevel noen ting en bør huske:
+              </p>
+              <ul>
+                <li>Vær ekstra nøye med håndhygiene. Vask alltid hendene etter toalettbesøk og før all håndtering av mat.</li>
+                <li>Bruk flytende såpe og egne håndklær og vaskekluter.</li>
+                <li>Vask ditt undertøy, håndklær og sengetøy på minst 60 &deg;C, og ikke sammen med tøy fra andre personer.</li>
+                <li>Ved diaré rengjøres toalettet og kraner med vanlig såpe eller klorin. Husk håndhygiene i etterkant.</li>
+                <li>Hvis du har sår eller urinkateter vaskes hendene grundig etter berøring.</li>
+                <li>Dersom du har sår, urinkateter eller diaré anbefales dusjing framfor å bade. Rengjør dusjen/badekaret etterpå. Husk håndhygiene i etterkant.</li>
+              </ul>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Info -->
+        
+        <!-- Info -->
+        <div id="dagliglivetFamiliePartner" class="anchor"></div>
+        <div  class="container content-space-2 content-space-lg-3">
+          <div class="row justify-content-lg-between">
+            <div class="col-lg-3  mb-lg-0">
+              <h2>Familie og partner</h2>
+            </div>
+            <!-- End Col -->
+        
+            <div class="col-lg-8">
+              <p>Det er ingen grunn til å være redd for å spre ESBL til familiemedlemmer. Du kan være nær og kjær med barn og barnebarn, partner og øvrig familie.</p>
+              <p>Så lenge du husker god håndhygiene etter toalettbesøk vil du ikke kunne smitte andre ved å ta på dem eller være nær dem. Du kan fint kysse og klemme på de du er glade i som du ville gjort ellers.</p>
+              <p>Du kan også ha et normalt seksualliv. Siden den vanligste smitteveien for ESBL er fra tarmen og eventuelt urin kan det være lurt å vaske seg før og etter seksuell aktivitet. Vær også bevisst på at siden ESBL finnes i tarmen bør en være ekstra påpasselig med renhold ved analt samleie.</p>
+              <p>Du har ikke opplysningsplikt overfor familie eller partner om at du er bærer av ESBL-produserende bakterier.</p>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Info -->
+        
+        <!-- Info -->
+        <div id="dagliglivetArbeidSkole" class="anchor"></div>
+        <div  class="container content-space-2 content-space-lg-3">
+          <div class="row justify-content-lg-between">
+            <div class="col-lg-3  mb-lg-0">
+              <h2>Arbeid og skole</h2>
+            </div>
+            <!-- End Col -->
+        
+            <div class="col-lg-8">
+              <p>Det er ingen tiltak overfor deg på din arbeidsplass eller på skole og universitet. Her også gjelder god håndhygiene – vask hendene etter toalettbesøk, og før du tilbereder eller spiser mat.</p>
+              <p>Du plikter ikke å si fra om ditt ESBL-bærerskap til din arbeidsgiver eller dine kollegaer. Det gjelder også om du jobber i helsevesenet.</p>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Info -->
+        
+        <!-- Info -->
+        <div id="dagliglivetSamfunnet" class="anchor"></div>
+        <div class="container content-space-2 content-space-lg-3">
+          <div class="row justify-content-lg-between">
+            <div class="col-lg-3 mb-5 mb-lg-0">
+              <h2>I samfunnet</h2>
+            </div>
+            <!-- End Col -->
+        
+            <div class="col-lg-8">
+              <p class="text-secondary">Ute i samfunnet er det ingen spesielle tiltak for deg som har påvist bærerskap av ESBL-produserende bakterier. Du kan dra på kafé, treningssenter, svømmeanlegg, butikker, og alt som andre gjør. Du må som alle adnre huske på god håndhygiene, og særlig før du skal håndtere eller spise mat, og etter toalettbesøk.</p>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Info -->
+      </div>
+      
+      <span class="divider-center mt-4 mb-4"></span>
+
+      <div id="helsevesenetInfo">
+        <!-- Hero -->
+        <div class="position-relative bg-soft-primary overflow-hidden" style="background-image: url(../ressurser/svg/components/wave-pattern-light.svg);">
+          <div class="container position-relative zi-2
+              content-space-t-3
+              content-space-t-lg-4
+              content-space-b-2
+              content-space-b-md-3">
+            <div class="row align-items-lg-center">
+              <div class="col-lg-5 mb-5 mb-lg-0">
+                <!-- Heading -->
+                <div class="mb-6">
+                  <h1 class="display-6 text-primary">
+                    ESBL i helsevesenet
+                  </h1>
+  
+                  <p class="lead text-primary-70">
+                    I all kontakt med helsevesenet skal du oppgi at du er bærer av ESBL slik at helsetjenesten du benytter deg av kan iverksette nødvendige tiltak for å hindre smitte til andre. 
+                  </p>
+                  <p class="lead text-primary-70">
+                    Hvilke tiltak er det snakk om, og hva innebærer det for deg?
+                  </p>
+                </div>
+                <!-- End Title & Description -->
+              </div>
+              <!-- End Col -->
+  
+              <div class="col-lg-7">
+                <div class="position-relative">
+                  <div class="">
+                    <div class="position-relative align-items-end">
+                      <img
+                        class="min-width-75 img-fluid rounded-2"
+                        src="../ressurser/bilder/1280x798/helsevesen.jpg"
+                        alt="MR-maskin ved UNN Narvik. Foto: Jan Fredrik Frantzen, kommunikasjonssenteret på UNN."
+                      />
+                      <div class="d-none d-sm-block position-absolute bottom-0 end-0 zi-1 mb-n5 me-n5" style="max-width: 40rem;" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Card -->
+                        <div class="card bg-transparent" style="background-image: url(../ressurser/svg/components/wave-pattern-light.svg);">
+                          <div class="card-body text-light">
+                            <p class="card-text small">Foto av Jan Fredrik Frantzen, kommunikasjonssenteret ved <a class="text-light text-highlight-light" href="https://flic.kr/p/mVYsVh">UNN</a>&nbsp;
+                            </p>
+                          </div>
+                        </div>
+                        <!-- End Card -->
+                      </div>
+                      <div
+                        class="
+                          position-absolute
+                          top-0
+                          end-0
+                          w-100
+                          h-100
+                          bg-soft-primary
+                          rounded-2
+                          zi-n1
+                          mt-5
+                          me-n5
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <!-- End Col -->
+                </div>
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+  
+          <!-- Shape -->
+          <div class="shape shape-bottom zi-1">
+            <svg
+              width="3000"
+              height="500"
+              viewBox="0 0 3000 500"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 500H3000V0L0 500Z" fill="#fff" />
+            </svg>
+          </div>
+          <!-- End Shape -->
+        </div>
+        <!-- End Hero -->
+        
+        <!-- Info -->
+        <div class="container content-space-2 content-space-lg-3">
+          <div class="row align-items-center">
+            <div class="col-md-6 position-relative translate-middle start-50">
+              <div class="alert alert-soft-danger" role="alert">
+                <div class="d-flex mt-3">
+                  <div class="flex-grow-1 ms-2 text-center align-middle">
+                    <p><i class="bi-exclamation-triangle-fill"></i> ESBL-bærerskap må aldri forsinke nødvendig helsehjelp <i class="bi-exclamation-triangle-fill"></i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="helsevesenetSykehus" class="anchor"></div>
+          <div class="row justify-content-lg-between">
+            <div class="col-lg-3  mb-lg-0">
+              <h2>På sykehus</h2>
+            </div>
+            <!-- End Col -->
+        
+            <div class="col-lg-8">
+              <p>ESBL er først og fremst et sykehusproblem. Utenfor sykehus kan man leve normalt, men ved innleggelser vil det bli iverksatt forebyggende tiltak for å unngå å spre ESBL til andre pasienter. Du vil kunne oppleve forskjellige tiltak avhengig av situasjon og hva som er årsaken til at du legges inn, men hovedmålsetningen er å unngå å spre bakteriene videre.</p>
+              <ul>
+                <li>Du vil få enerom med eget toalett. Hvis du blir innlagt med infeksjon vil du bli isolert.</li>
+                <li>Du vil oppleve at helsepersonell i enkelte tilfeller bruker smittefrakk og hansker.</li>
+                <li>Det er viktig at man er ekstra nøye med håndhygienen. Dette gjelder også besøkende.</li>
+                <li>Du får mat og drikke servert.</li>
+                <li>Noen foretak har som rutine å planlegge undersøkelser til senere på dagen. Det at du har ESBL-bærerskap skal likevel ikke være til hinder eller forsinke den helsehjelpen du skal ha.</li>
+              </ul>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Info -->
+        
+        <!-- Info -->
+        <div id="helsevesenetSykehjem" class="anchor"></div>
+        <div class="container content-space-2 content-space-lg-3">
+          <div class="row justify-content-lg-between">
+            <div class="col-lg-3  mb-lg-0">
+              <h2>På sykehjem</h2>
+            </div>
+            <!-- End Col -->
+        
+            <div class="col-lg-8">
+              <p>På sykehjem vil du ikke bli isolert, men pleierne vil bruke forsterkete tiltak blant annet ved stell, sengereiing, og toalettbesøk. Det er viktig at du selv også er nøye med god personlig hygiene, samt god håndhygiene. Dette gjelder også om du er besøkende på sykehjem.</p>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Info -->
+        
+        <!-- Info -->
+        <div id="helsevesenetLegekontor" class="anchor"></div>
+        <div class="container content-space-2 content-space-lg-3">
+          <div class="row justify-content-lg-between">
+            <div class="col-lg-3  mb-lg-0">
+              <h2>På legekontor og lignende</h2>
+            </div>
+            <!-- End Col -->
+        
+            <div class="col-lg-8">
+              <p>På legekontor, hos tannlege, fysioterapeut og andre helsetjenestetilbydere vil det ikke være spesielle tiltak når du kommer til timen din. Du skal likevel opplyse om EBSL-bærerskap da det kan ha betydning for behandling. Det kan også være du skal utføre prosedyrer eller behandlinger som kan gi økt risiko for smittespredning, og da kan helsepersonellet ta nødvendige hensyn.</p>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Info -->
+        
+        <!-- Info -->
+        <div id="helsevesenetHjemmetjenesten" class="anchor"></div>
+        <div class="container content-space-2 content-space-lg-3">
+          <div class="row justify-content-lg-between">
+            <div class="col-lg-3  mb-lg-0">
+              <h2>Hjemmetjenesten</h2>
+            </div>
+            <!-- End Col -->
+        
+            <div class="col-lg-8">
+              <p class="text-secondary"><span class="text-highlight-primary">Info kommer.</span></p>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Info -->
+        
+      </div>
+      
+      <span class="divider-center mt-4 mb-4"></span>
+
+
+      <div>
+        <div id="ressurser" class="anchor"></div>
+        <!-- Card Grid -->
+        <div class="container mt-10">
+          <!-- Heading -->
+          <div class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
+            <h2 class="h1">Ressurser</h2>
+            <p>Her finner du et utvalg med lenker til nettsteder og ressurser hvis du ønsker mer informasjon.</p>
+            <p>For helsetjenester er det også tilgjengelig en plakat som rettet oppmerksomhet mot denne nettsiden i flere størrelser, som kan lastes ned og henges opp på for eksempel et legekontor.</p>
+          </div>
+          <!-- End Heading -->
+          <div id="ressurserLenker" class="w-lg-100 mx-lg-auto">
+            
+            <div id="ressurserVideo" class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
+              <h3 class="h2 mt-10">Håndvask med såpe og vann</h3>
+            </div>
+            <div class="row mb-5">
+              
+              <!-- End Col -->
+              
+              <div class="text-center mb-7" data-aos="fade-up">
+                <!-- Icon Block -->
+                <!-- Video Block -->
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                  <iframe src="https://player.vimeo.com/video/165163727?h=854a71ddc6&color=ff9933&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                  </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js">
+                </script>
+                <p class="mt-2 text-center text-secondary">"<a class="text-highlight-primary text-secondary" href="https://vimeo.com/165163727">H&aring;ndvask med s&aring;pe og vann &ndash; H&aring;ndhygiene</a>" er tilgjengelig fra <a class="text-highlight-primary text-secondary" href="https://vimeo.com/folkehelseinstituttet">Folkehelseinstituttet</a> på <a class="text-highlight-primary text-secondary" href="https://vimeo.com">Vimeo</a>.
+              </p>
+            </div>
+              <!-- End Col -->
+            </div>
+            
+            <div class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
+              <h3 class="h2">Nyttige lenker</h3>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
+                <!-- Icon Block -->
+                <a class="card card-transition h-100" href="https://www.fhi.no/nettpub/smittevernveilederen/sykdommer-a-a/esbl-betalaktamaser-med-utvidet-spe/" target="new">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="flex-grow-1 ms-4">
+                        <h4 class="card-title">Folkehelseinstituttet</h4>
+                        <p class="card-text text-body">Kapittel om ESBL i smittevernveilederen for helsepersonell.</p>
+                        <p class="card-link "s>Besøk siden<i class="bi-chevron-right small ms-1"></i></p>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <span class="svg-icon text-primary">
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           viewBox="0 0 276.3 110.3" style="enable-background:new 0 0 276.3 110.3;" xml:space="preserve">
+                          <style type="text/css">
+                            .st0{fill:#373E66;}
+                          </style>
+                          <title>Artboard 1</title>
+                          <path class="st0" d="M83.1,34.3c-0.4,4.2-4.1,7.3-8.3,6.9c-4.2-0.4-7.3-4.1-6.9-8.3c0.4-4.2,4.1-7.3,8.3-6.9
+                            C80.3,26.4,83.4,30.1,83.1,34.3C83.1,34.3,83.1,34.3,83.1,34.3 M84.6,24.2L84.6,24.2C73,12.5,49.7,9.9,4.4,29.4
+                            c-0.2,0.1-0.9,0.4-0.9,0.4c-1.2,0.8-2,2.1-2,3.6c-0.1,2.3,1.7,4.2,4,4.2c0.1,0,0.1,0,0.2,0c0.7-0.1,1.4-0.3,2-0.6
+                            c6.7-2.4,39.5-11.3,56.7,4.2c0.6,0.5,1.1,0.9,1.6,1.4s1,1,1.4,1.6c15.6,17.3,6.6,50.1,4.1,56.7c-0.3,0.6-0.5,1.3-0.6,2
+                            c-0.1,2.3,1.7,4.2,4,4.3c0.1,0,0.1,0,0.2,0c1.5,0,2.8-0.8,3.6-2c0.2-0.3,0.3-0.6,0.4-0.9C98.9,59.2,96.2,35.8,84.6,24.2"/>
+                          <path class="st0" d="M107.1,12.3c-0.5,5.4-5.3,9.5-10.7,9c-5.4-0.5-9.5-5.3-9-10.7c0.5-5.4,5.3-9.5,10.7-9
+                            C103.6,2.1,107.6,6.9,107.1,12.3"/>
+                          <path class="st0" d="M62,52.8c-0.3,2.9-2.8,5-5.6,4.7c-2.9-0.3-5-2.8-4.7-5.6c0.3-2.9,2.8-5,5.6-4.7C60.2,47.4,62.3,49.9,62,52.8
+                            C62,52.7,62,52.7,62,52.8"/>
+                          <path class="st0" d="M47.4,65.8c-0.2,2.1-2.1,3.7-4.2,3.5c-2.1-0.2-3.7-2.1-3.5-4.2s2.1-3.7,4.2-3.5c0,0,0,0,0,0
+                            C46,61.8,47.6,63.7,47.4,65.8"/>
+                          <path class="st0" d="M242.4,24.8H233c-1.4,0.1-2.4,1.3-2.3,2.7v31.2h-32.2V27.4c0.1-1.4-0.9-2.6-2.3-2.7h-9.4
+                            c-1.4,0.1-2.4,1.3-2.3,2.7v79c0,1.4,1,2.5,2.3,2.7h9.4c1.4-0.1,2.4-1.3,2.3-2.7V73.9h32.2v32.5c-0.1,1.4,1,2.6,2.3,2.7h9.3
+                            c1.4-0.1,2.4-1.3,2.3-2.7v-79C244.7,26.1,243.7,24.9,242.4,24.8z"/>
+                          <path class="st0" d="M174.5,24.8h-41.2c-1.4,0.1-2.4,1.3-2.3,2.7v79c-0.1,1.4,1,2.6,2.3,2.7h9.3c1.4-0.1,2.4-1.3,2.3-2.7V73.9h24.6
+                            c1.4-0.1,2.4-1.3,2.3-2.7v-9.8c0-1.4-1-2.5-2.3-2.7h-24.6V39.9h29.6c1.4-0.1,2.4-1.3,2.3-2.7v-9.8C176.9,26.1,175.9,24.9,174.5,24.8
+                            z"/>
+                          <path class="st0" d="M272.2,24.8h-9.4c-1.4,0.1-2.4,1.3-2.3,2.7v79c0,1.4,1,2.5,2.3,2.7h9.4c1.4-0.1,2.4-1.3,2.3-2.7v-79
+                            C274.6,26.1,273.6,24.9,272.2,24.8z"/>
+                        </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Icon Block -->
+              </div>
+              <!-- End Col -->
+              
+              <div class="col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
+                <!-- Icon Block -->
+                <a class="card card-transition h-100" href="https://www.fhi.no/sv/forebygging-i-helsetjenesten/smittevern-i-institusjoner/tiltak/esbl-holdige-gramnegative-stavbakte/" target="new">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="flex-grow-1 ms-4">
+                        <h4 class="card-title">Folkehelseinstituttet</h4>
+                        <p class="card-text text-body">Veileder for smitteverntiltak i helseinstitusjoner.</p>
+                        <p class="card-link "s>Besøk siden<i class="bi-chevron-right small ms-1"></i></p>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <span class="svg-icon text-primary">
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           viewBox="0 0 276.3 110.3" style="enable-background:new 0 0 276.3 110.3;" xml:space="preserve">
+                          <style type="text/css">
+                            .st0{fill:#373E66;}
+                          </style>
+                          <title>Artboard 1</title>
+                          <path class="st0" d="M83.1,34.3c-0.4,4.2-4.1,7.3-8.3,6.9c-4.2-0.4-7.3-4.1-6.9-8.3c0.4-4.2,4.1-7.3,8.3-6.9
+                            C80.3,26.4,83.4,30.1,83.1,34.3C83.1,34.3,83.1,34.3,83.1,34.3 M84.6,24.2L84.6,24.2C73,12.5,49.7,9.9,4.4,29.4
+                            c-0.2,0.1-0.9,0.4-0.9,0.4c-1.2,0.8-2,2.1-2,3.6c-0.1,2.3,1.7,4.2,4,4.2c0.1,0,0.1,0,0.2,0c0.7-0.1,1.4-0.3,2-0.6
+                            c6.7-2.4,39.5-11.3,56.7,4.2c0.6,0.5,1.1,0.9,1.6,1.4s1,1,1.4,1.6c15.6,17.3,6.6,50.1,4.1,56.7c-0.3,0.6-0.5,1.3-0.6,2
+                            c-0.1,2.3,1.7,4.2,4,4.3c0.1,0,0.1,0,0.2,0c1.5,0,2.8-0.8,3.6-2c0.2-0.3,0.3-0.6,0.4-0.9C98.9,59.2,96.2,35.8,84.6,24.2"/>
+                          <path class="st0" d="M107.1,12.3c-0.5,5.4-5.3,9.5-10.7,9c-5.4-0.5-9.5-5.3-9-10.7c0.5-5.4,5.3-9.5,10.7-9
+                            C103.6,2.1,107.6,6.9,107.1,12.3"/>
+                          <path class="st0" d="M62,52.8c-0.3,2.9-2.8,5-5.6,4.7c-2.9-0.3-5-2.8-4.7-5.6c0.3-2.9,2.8-5,5.6-4.7C60.2,47.4,62.3,49.9,62,52.8
+                            C62,52.7,62,52.7,62,52.8"/>
+                          <path class="st0" d="M47.4,65.8c-0.2,2.1-2.1,3.7-4.2,3.5c-2.1-0.2-3.7-2.1-3.5-4.2s2.1-3.7,4.2-3.5c0,0,0,0,0,0
+                            C46,61.8,47.6,63.7,47.4,65.8"/>
+                          <path class="st0" d="M242.4,24.8H233c-1.4,0.1-2.4,1.3-2.3,2.7v31.2h-32.2V27.4c0.1-1.4-0.9-2.6-2.3-2.7h-9.4
+                            c-1.4,0.1-2.4,1.3-2.3,2.7v79c0,1.4,1,2.5,2.3,2.7h9.4c1.4-0.1,2.4-1.3,2.3-2.7V73.9h32.2v32.5c-0.1,1.4,1,2.6,2.3,2.7h9.3
+                            c1.4-0.1,2.4-1.3,2.3-2.7v-79C244.7,26.1,243.7,24.9,242.4,24.8z"/>
+                          <path class="st0" d="M174.5,24.8h-41.2c-1.4,0.1-2.4,1.3-2.3,2.7v79c-0.1,1.4,1,2.6,2.3,2.7h9.3c1.4-0.1,2.4-1.3,2.3-2.7V73.9h24.6
+                            c1.4-0.1,2.4-1.3,2.3-2.7v-9.8c0-1.4-1-2.5-2.3-2.7h-24.6V39.9h29.6c1.4-0.1,2.4-1.3,2.3-2.7v-9.8C176.9,26.1,175.9,24.9,174.5,24.8
+                            z"/>
+                          <path class="st0" d="M272.2,24.8h-9.4c-1.4,0.1-2.4,1.3-2.3,2.7v79c0,1.4,1,2.5,2.3,2.7h9.4c1.4-0.1,2.4-1.3,2.3-2.7v-79
+                            C274.6,26.1,273.6,24.9,272.2,24.8z"/>
+                        </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Icon Block -->
+              </div>
+              <!-- End Col -->
+              
+              <div class="col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
+                <!-- Icon Block -->
+                <a class="card card-transition h-100" href="https://www.infeksjonskontroll.no/forebygging/5870" target="new">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="flex-grow-1 ms-4">
+                        <h4 class="card-title">Infeksjonskontroll.no</h4>
+                        <p class="card-text text-body">Informasjon for pasienter og pårørende fra Regionalt kompetansesenter for smittevern Helse Sør-Øst.</p>
+                        <p class="card-link "s>Besøk siden<i class="bi-chevron-right small ms-1"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Icon Block -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <div class="row">
+            <div class="col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
+              <!-- Icon Block -->
+              <a class="card card-transition h-100" href="https://unn.no/Documents/Kompetansetjenester,%20-sentre%20og%20fagråd/Kompetansesenter%20i%20smittevern%20Helse%20Nord%20(KORSN)/ESLB_pasientinformasjon.pdf">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="flex-grow-1 ms-4">
+                      <h4 class="card-title">Folkehelseinstituttet</h4>
+                      <p class="card-text text-body">Kapittel om ESBL i smittevernveilederen for helsepersonell.</p>
+                      <p class="card-link "s>Last A2<i class="bi-download small ms-1"></i></p>
+                    </div>
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon text-primary">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 276.3 110.3" style="enable-background:new 0 0 276.3 110.3;" xml:space="preserve">
+                        <style type="text/css">
+                          .st0{fill:#373E66;}
+                        </style>
+                        <title>Artboard 1</title>
+                        <path class="st0" d="M83.1,34.3c-0.4,4.2-4.1,7.3-8.3,6.9c-4.2-0.4-7.3-4.1-6.9-8.3c0.4-4.2,4.1-7.3,8.3-6.9
+                          C80.3,26.4,83.4,30.1,83.1,34.3C83.1,34.3,83.1,34.3,83.1,34.3 M84.6,24.2L84.6,24.2C73,12.5,49.7,9.9,4.4,29.4
+                          c-0.2,0.1-0.9,0.4-0.9,0.4c-1.2,0.8-2,2.1-2,3.6c-0.1,2.3,1.7,4.2,4,4.2c0.1,0,0.1,0,0.2,0c0.7-0.1,1.4-0.3,2-0.6
+                          c6.7-2.4,39.5-11.3,56.7,4.2c0.6,0.5,1.1,0.9,1.6,1.4s1,1,1.4,1.6c15.6,17.3,6.6,50.1,4.1,56.7c-0.3,0.6-0.5,1.3-0.6,2
+                          c-0.1,2.3,1.7,4.2,4,4.3c0.1,0,0.1,0,0.2,0c1.5,0,2.8-0.8,3.6-2c0.2-0.3,0.3-0.6,0.4-0.9C98.9,59.2,96.2,35.8,84.6,24.2"/>
+                        <path class="st0" d="M107.1,12.3c-0.5,5.4-5.3,9.5-10.7,9c-5.4-0.5-9.5-5.3-9-10.7c0.5-5.4,5.3-9.5,10.7-9
+                          C103.6,2.1,107.6,6.9,107.1,12.3"/>
+                        <path class="st0" d="M62,52.8c-0.3,2.9-2.8,5-5.6,4.7c-2.9-0.3-5-2.8-4.7-5.6c0.3-2.9,2.8-5,5.6-4.7C60.2,47.4,62.3,49.9,62,52.8
+                          C62,52.7,62,52.7,62,52.8"/>
+                        <path class="st0" d="M47.4,65.8c-0.2,2.1-2.1,3.7-4.2,3.5c-2.1-0.2-3.7-2.1-3.5-4.2s2.1-3.7,4.2-3.5c0,0,0,0,0,0
+                          C46,61.8,47.6,63.7,47.4,65.8"/>
+                        <path class="st0" d="M242.4,24.8H233c-1.4,0.1-2.4,1.3-2.3,2.7v31.2h-32.2V27.4c0.1-1.4-0.9-2.6-2.3-2.7h-9.4
+                          c-1.4,0.1-2.4,1.3-2.3,2.7v79c0,1.4,1,2.5,2.3,2.7h9.4c1.4-0.1,2.4-1.3,2.3-2.7V73.9h32.2v32.5c-0.1,1.4,1,2.6,2.3,2.7h9.3
+                          c1.4-0.1,2.4-1.3,2.3-2.7v-79C244.7,26.1,243.7,24.9,242.4,24.8z"/>
+                        <path class="st0" d="M174.5,24.8h-41.2c-1.4,0.1-2.4,1.3-2.3,2.7v79c-0.1,1.4,1,2.6,2.3,2.7h9.3c1.4-0.1,2.4-1.3,2.3-2.7V73.9h24.6
+                          c1.4-0.1,2.4-1.3,2.3-2.7v-9.8c0-1.4-1-2.5-2.3-2.7h-24.6V39.9h29.6c1.4-0.1,2.4-1.3,2.3-2.7v-9.8C176.9,26.1,175.9,24.9,174.5,24.8
+                          z"/>
+                        <path class="st0" d="M272.2,24.8h-9.4c-1.4,0.1-2.4,1.3-2.3,2.7v79c0,1.4,1,2.5,2.3,2.7h9.4c1.4-0.1,2.4-1.3,2.3-2.7v-79
+                          C274.6,26.1,273.6,24.9,272.2,24.8z"/>
+                      </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- End Icon Block -->
+            </div>
+            <!-- End Col -->
+            
+            <div class="col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
+              <!-- Icon Block -->
+              <a class="card card-transition h-100" href="https://www.fhi.no/sv/forebygging-i-helsetjenesten/smittevern-i-institusjoner/tiltak/esbl-holdige-gramnegative-stavbakte/" target="new">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="flex-grow-1 ms-4">
+                      <h4 class="card-title">Folkehelseinstituttet</h4>
+                      <p class="card-text text-body">Veileder for smitteverntiltak i helseinstitusjoner.</p>
+                      <p class="card-link "s>Besøk siden<i class="bi-chevron-right small ms-1"></i></p>
+                    </div>
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon text-primary">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 276.3 110.3" style="enable-background:new 0 0 276.3 110.3;" xml:space="preserve">
+                        <style type="text/css">
+                          .st0{fill:#373E66;}
+                        </style>
+                        <title>Artboard 1</title>
+                        <path class="st0" d="M83.1,34.3c-0.4,4.2-4.1,7.3-8.3,6.9c-4.2-0.4-7.3-4.1-6.9-8.3c0.4-4.2,4.1-7.3,8.3-6.9
+                          C80.3,26.4,83.4,30.1,83.1,34.3C83.1,34.3,83.1,34.3,83.1,34.3 M84.6,24.2L84.6,24.2C73,12.5,49.7,9.9,4.4,29.4
+                          c-0.2,0.1-0.9,0.4-0.9,0.4c-1.2,0.8-2,2.1-2,3.6c-0.1,2.3,1.7,4.2,4,4.2c0.1,0,0.1,0,0.2,0c0.7-0.1,1.4-0.3,2-0.6
+                          c6.7-2.4,39.5-11.3,56.7,4.2c0.6,0.5,1.1,0.9,1.6,1.4s1,1,1.4,1.6c15.6,17.3,6.6,50.1,4.1,56.7c-0.3,0.6-0.5,1.3-0.6,2
+                          c-0.1,2.3,1.7,4.2,4,4.3c0.1,0,0.1,0,0.2,0c1.5,0,2.8-0.8,3.6-2c0.2-0.3,0.3-0.6,0.4-0.9C98.9,59.2,96.2,35.8,84.6,24.2"/>
+                        <path class="st0" d="M107.1,12.3c-0.5,5.4-5.3,9.5-10.7,9c-5.4-0.5-9.5-5.3-9-10.7c0.5-5.4,5.3-9.5,10.7-9
+                          C103.6,2.1,107.6,6.9,107.1,12.3"/>
+                        <path class="st0" d="M62,52.8c-0.3,2.9-2.8,5-5.6,4.7c-2.9-0.3-5-2.8-4.7-5.6c0.3-2.9,2.8-5,5.6-4.7C60.2,47.4,62.3,49.9,62,52.8
+                          C62,52.7,62,52.7,62,52.8"/>
+                        <path class="st0" d="M47.4,65.8c-0.2,2.1-2.1,3.7-4.2,3.5c-2.1-0.2-3.7-2.1-3.5-4.2s2.1-3.7,4.2-3.5c0,0,0,0,0,0
+                          C46,61.8,47.6,63.7,47.4,65.8"/>
+                        <path class="st0" d="M242.4,24.8H233c-1.4,0.1-2.4,1.3-2.3,2.7v31.2h-32.2V27.4c0.1-1.4-0.9-2.6-2.3-2.7h-9.4
+                          c-1.4,0.1-2.4,1.3-2.3,2.7v79c0,1.4,1,2.5,2.3,2.7h9.4c1.4-0.1,2.4-1.3,2.3-2.7V73.9h32.2v32.5c-0.1,1.4,1,2.6,2.3,2.7h9.3
+                          c1.4-0.1,2.4-1.3,2.3-2.7v-79C244.7,26.1,243.7,24.9,242.4,24.8z"/>
+                        <path class="st0" d="M174.5,24.8h-41.2c-1.4,0.1-2.4,1.3-2.3,2.7v79c-0.1,1.4,1,2.6,2.3,2.7h9.3c1.4-0.1,2.4-1.3,2.3-2.7V73.9h24.6
+                          c1.4-0.1,2.4-1.3,2.3-2.7v-9.8c0-1.4-1-2.5-2.3-2.7h-24.6V39.9h29.6c1.4-0.1,2.4-1.3,2.3-2.7v-9.8C176.9,26.1,175.9,24.9,174.5,24.8
+                          z"/>
+                        <path class="st0" d="M272.2,24.8h-9.4c-1.4,0.1-2.4,1.3-2.3,2.7v79c0,1.4,1,2.5,2.3,2.7h9.4c1.4-0.1,2.4-1.3,2.3-2.7v-79
+                          C274.6,26.1,273.6,24.9,272.2,24.8z"/>
+                      </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- End Icon Block -->
+            </div>
+            <!-- End Col -->
+            
+            <div class="col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
+              <!-- Icon Block -->
+              <a class="card card-transition h-100" href="https://www.infeksjonskontroll.no/forebygging/5870" target="new">
+                <div class="card-body">
+                  <div class="d-flex">
+                    <div class="flex-grow-1 ms-4">
+                      <h4 class="card-title">Infeksjonskontroll.no</h4>
+                      <p class="card-text text-body">Informasjon for pasienter og pårørende fra Regionalt kompetansesenter for smittevern Helse Sør-Øst.</p>
+                      <p class="card-link "s>Besøk siden<i class="bi-chevron-right small ms-1"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- End Icon Block -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+            <!-- End Row -->
+            <div id="ressurserPlakater" class="w-md-75 w-lg-75 text-center mx-md-auto mb-5 mb-md-9">
+              <h3 class="h2 mt-10">Plakater</h3>
+            </div>
+            <div class="row">
+              <div class="col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
+                <!-- Icon Block -->
+                <a class="card card-transition h-100" href="nedlastinger/Plakat-ESBL-A2.pdf">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="flex-grow-1 ms-4">
+                        <h4 class="card-title">Plakat ESBL-bærerskap A6</h4>
+                        <p class="card-text text-body">Plakat for legekontor og lignende med QR-kode og lenke til denne nettsiden.</p>
+                        <p class="card-link "s>Last ned <i class="bi-download small ms-1"></i></p>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <span class="svg-icon text-primary">
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Icon Block -->
+              </div>
+              <!-- End Col -->
+              
+              <div class="col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
+                <!-- Icon Block -->
+                <a class="card card-transition h-100" href="nedlastinger/Plakat-ESBL-A4.pdf">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="flex-grow-1 ms-4">
+                        <h4 class="card-title">Plakat ESBL-bærerskap A4</h4>
+                        <p class="card-text text-body">Plakat for legekontor og lignende med QR-kode og lenke til denne nettsiden.</p>
+                        <p class="card-link "s>Last ned <i class="bi-download small ms-1"></i></p>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <span class="svg-icon text-primary">
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Icon Block -->
+              </div>
+              <!-- End Col -->
+              
+              <div class="col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
+                <!-- Icon Block -->
+                <a class="card card-transition h-100" href="nedlastinger/Plakat-ESBL-A6.pdf">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="flex-grow-1 ms-4">
+                        <h4 class="card-title">Plakat ESBL-bærerskap A2</h4>
+                        <p class="card-text text-body">Plakat for legekontor og lignende med QR-kode og lenke til denne nettsiden.</p>
+                        <p class="card-link "s>Last ned <i class="bi-download small ms-1"></i></p>
+                      </div>
+                      <div class="flex-shrink-0">
+                        <span class="svg-icon text-primary">
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- End Icon Block -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+        </div>
+        <!-- End Card Grid -->
+      </div>
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="container text-center content-space-1">
+      <!-- Logo -->
+      <a class="d-inline-flex align-items-center mb-2" href="index.html" aria-label="ESBL">
+        <img class="brand" src="../ressurser/svg/logo/logo.svg" alt="ESBL">
+      </a>
+      <!-- End Logo -->
+    
+      <p class="small text-muted mb-0">HVL MSS500. Infeksjon og smittevern, gruppe 5.</p>
+      <p class="small text-muted mb-0">2021</p>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    <!-- ========== SECONDARY CONTENTS ========== -->
+    
+    <!-- Modal -->
+    <div
+      id="omSidenModal"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Om siden
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Denne siden er laget av seks sykepleiere som tar
+              videreutdanning eller master i klinisk sykepleie med
+              infeksjon og smittevern som klinisk spesialitet ved
+              Høgskulen på Vestlandet.
+            </p>
+            <p>
+              Denne siden er en delbesvarelse på en obligatorisk
+              læringsaktivitet i emnet MSS500 – Helsepedagogikk,
+              helsetjenesteutvikling og innovasjon. Den går ut på å
+              utarbeide informasjon for pasienter og pårørende om et
+              tema innenfor vårt fagfelt.
+            </p>
+            <p>
+              Informasjonen på denne siden er hentet fra kilder vi selv
+              har søkt oss frem til og vurdert relevansen til. Siden vil
+              bli stående oppe til etter sensur på oppgaven i november
+              2021, til senest høsten 2022.
+            </p>
+            <p>
+              Eventuelle henvendelser kan rettes til oss på
+              <span
+                class="link-primary"
+                href="mailto:597838@stud.hvl.no"
+                >e-post.</span
+              >
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Lukk
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- ========== END SECONDARY CONTENTS ========== -->
+
+    <!-- JS Global Compulsory  -->
+    <script src="./ressurser/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="./ressurser/js/hs-header.min.js"></script>
+    <script src="./ressurser/js/hs-mega-menu.min.js"></script>
+    <script src="./ressurser/js/hs-show-animation.min.js"></script>
+    <script src="./ressurser/js/hs-go-to.min.js"></script>
+    <script src="./ressurser/js/dist/aos.js"></script>
+    <script src="./ressurser/js/typed.min.js"></script>
+    <script src="./ressurser/js/hs-scrollspy.min.js"></script>
+    <script src="./ressurser/js/leaflet.js"></script>
+    <script src="./ressurser/js/hs-sticky-block.min.js"></script>
+    <script src="./ressurser/hs-video-player.min.js"></script>
+
+    <!-- JS Front -->
+    <script src="./ressurser/js/theme.min.js"></script>
+    <script src="./ressurser/js/hs.typed.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      (function () {
+        // INITIALIZATION OF SHOW ANIMATIONS
+        // =======================================================
+        new HSShowAnimation(".js-animation-link");
+
+        // INITIALIZATION OF BOOTSTRAP VALIDATION
+        // =======================================================
+        HSBsValidation.init(".js-validate", {
+          onSubmit: (data) => {
+            data.event.preventDefault();
+            alert("Submited");
+          },
+        });
+
+        // INITIALIZATION OF GO TO
+        // =======================================================
+        new HSGoTo(".js-go-to");
+
+        // INITIALIZATION OF TEXT ANIMATION (TYPING)
+        // =======================================================
+        HSCore.components.HSTyped.init(".js-typedjs");
+
+        // INITIALIZATION OF AOS
+        // =======================================================
+        AOS.init({
+          duration: 650,
+          once: true,
+        });
+
+        // INITIALIZATION OF TEXT ANIMATION (TYPING)
+        // =======================================================
+        HSCore.components.HSTyped.init(".js-typedjs");
+
+        // SCROLLSPY
+        // =======================================================
+        new bootstrap.ScrollSpy(document.body, {
+          target: "#navbarNavDropdown",
+        });
+
+        new HSScrollspy("#navbarNavDropdownNav", {
+          breakpoint: "lg",
+          scrollOffset: -10,
+        });
+
+        // INITIALIZATION OF BOOTSTRAP VALIDATION
+        // =======================================================
+        HSBsValidation.init(".js-validate", {
+          onSubmit: (data) => {
+            data.event.preventDefault();
+            alert("Submited");
+          },
+        });
+
+        // INITIALIZATION OF LEAFLET
+        // =======================================================
+        const leaflet = HSCore.components.HSLeaflet.init(
+          document.getElementById("map")
+        );
+
+        L.tileLayer(
+          "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+          {
+            id: "mapbox/light-v9",
+          }
+        ).addTo(leaflet);
+      })();
+    </script>
+   <script>
+     (function() {
+       // INITIALIZATION OF HEADER
+       // =======================================================
+       new HSHeader('#header').init()
+   
+   
+       // INITIALIZATION OF MEGA MENU
+       // =======================================================
+       new HSMegaMenu('.js-mega-menu', {
+           desktop: {
+             position: 'left'
+           },
+           eventType: 'click'
+         }).init();
+     })()
+   </script>
+   <script>
+     (function() {
+       // INITIALIZATION OF VIDEO PLAYER
+       // =======================================================
+       new HSVideoPlayer('.js-inline-video-player')
+     });
+   </script>
+  </body>
+</html>
