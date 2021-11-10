@@ -7,9 +7,9 @@ Denne siden er en delbesvarelse på en obligatorisk læringsaktivitet i emnet MS
 Siden vil være tilgjengelig på https://levmedesbl.no og https://lev-med-esbl.no til domenerettighetene går ut medio september 2022. Innholdet vil være tilgjengelig her på GitHub også etter det.
 
 ## Bidragsytere
-Elin Alice Antonsen - sykepleier, Bø Legekontor
-Ida-Karoline Olsen - sykepleier, Åsnes sykehjem
-Kirsti Nystuen - sykepleier, Infeksjonsmedisinsk avdeling, Sykehuset Innlandet Lillehammer
-Lars Martin Sandbakken - sykepleier, Infeksjonsmedisinsk seksjon, medisinsk klinikk, Universitetssykehuset Nord-Norge
-Maren Forsmo - sykepleier, Avdeling for fag, forskning og utdanning, Helgelandssykehuset
-Synnøve Sætermo - sykepleier, Avdeling for fag, forskning og utdanning, Helgelandssykehuset
+- Elin Alice Antonsen, sykepleier ved Bø Legekontor
+- Ida-Karoline Olsen, sykepleier ved Åsnes sykehjem
+- Kirsti Nystuen, sykepleier ved Infeksjonsmedisinsk avdeling, Sykehuset Innlandet Lillehammer
+- Lars Martin Sandbakken, sykepleier ved Infeksjonsmedisinsk seksjon, medisinsk klinikk, Universitetssykehuset Nord-Norge
+- Maren Forsmo, sykepleier ved Avdeling for fag, forskning og utdanning, Helgelandssykehuset
+- Synnøve Sætermo, sykepleier ved Avdeling for fag, forskning og utdanning, Helgelandssykehuset
