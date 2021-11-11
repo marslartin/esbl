@@ -39,7 +39,7 @@
       <div class="container">
         <nav class="js-mega-menu navbar-nav-wrap">
           <!-- Default Logo -->
-          <a class="navbar-brand" href="../index.html" aria-label="ESBL">
+          <a class="navbar-brand" href="./index.html" aria-label="ESBL">
             <img class="navbar-brand-logo" src="./ressurser/svg/logo/logo-white.svg" alt="ESBL">
           </a>
           <!-- End Default Logo -->
@@ -223,7 +223,7 @@
               <!-- End Title & Description -->
 
               <div class="d-inline gap-3">
-                <a class="btn btn-primary " href="#omESBL">Les mer<i class="bi-chevron-down small ms-1"></i></a>
+                <a class="btn btn-primary " href="#omESBL">Les om ESBL<i class="bi-chevron-down small ms-1"></i></a>
                 <a class="btn btn-ghost-light" data-bs-toggle="modal" data-bs-target="#omSidenModal">Om siden <i class="bi-info-circle small ms-1"></i></a>
               </div>
             </div>
@@ -1057,15 +1057,15 @@
     <!-- ========== END MAIN CONTENT ========== -->
 
     <!-- ========== FOOTER ========== -->
-    <footer class="container text-center content-space-1">
+    <footer id="footer" class="container text-center content-space-1">
       <!-- Logo -->
       <a class="d-inline-flex align-items-center mb-2" href="index.html" aria-label="ESBL">
         <img class="brand" src="./ressurser/svg/logo/logo.svg" alt="ESBL">
       </a>
       <!-- End Logo -->
     
-      <p class="small text-muted mb-0">HVL MSS500. Infeksjon og smittevern, gruppe 5.</p>
-      <p class="small text-muted mb-0">2021</p>
+      <p class="small text-muted mb-0">2021 &copy; HVL MSS500. Infeksjon og smittevern, gruppe 5.</p>
+      <p class="small text-muted mb-0"><a class="text-muted text-highlight-secondary" data-bs-toggle="modal" data-bs-target="#omSidenModal" href="">Om siden</a>
     </footer>
     <!-- ========== END FOOTER ========== -->
 
@@ -1131,6 +1131,36 @@
       </div>
     </div>
     <!-- End Modal -->
+    
+    <!-- Cookie Alert -->
+    <div class="container position-fixed bottom-0 start-0 end-0 zi-3">
+      <div id="samtykkeInformasjonskapsler" class="alert alert-white w-lg-75 shadow-sm mx-auto" role="'alert'">
+        <h5 class="text-dark">Informasjonskapsler</h5>
+        <p class="small">Denne siden benytter seg <span class="fw-semi-bold">ikke </span> av informasjonskapsler fra tredjeparter.</p>
+        <a class="link-primary small collapse show multi-collapse" id="visInformasjonskapsler" data-bs-toggle="collapse" href=".multi-collapse"  aria-expanded="false" aria-controls="omInformasjonskapsler visInformasjonskapsler skjulInformasjonskapsler">Les mer<i class="bi-chevron-down small ms-1"></i></a>
+        <a class="link-primary small collapse multi-collapse" id="skjulInformasjonskapsler" data-bs-toggle="collapse" href=".multi-collapse"  aria-expanded="false" aria-controls="omInformasjonskapsler visInformasjonskapsler skjulInformasjonskapsler">Vis mindre<i class="bi-chevron-up small ms-1"></i></a>
+        <p id="omInformasjonskapsler" class="collapse multi-collapse small">
+          Informasjonskapsler (cookies) er små tekstfiler som plasseres på din datamaskin når du laster ned en nettside. Når du besøker levmedesbl.no installeres informasjonskapsler som er nødvendige for at du skal kunne benytte deg av nettsiden. For bruk av informasjonskapsler til andre formål kreves ditt aktive samtykke.<br  /><br  />
+          Denne nettsiden er publisert på GitHub via Vercel. Hverken disse sidene eller levmedesbl.no benytter seg av informasjonskapsler fra tredjeparter til for ekspempel sporing og analyse eller tilpasning av reklame.
+        </p>
+        <div class="row mt-3 align-items-sm-center">
+          <div class="col-sm-8 mb-3 mb-sm-0">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
+              <label class="form-check-label small" for="inlineCheckbox1">Nødvendige informasjonskapsler</label>
+            </div>
+          </div>
+          <!-- End Col -->
+    
+          <div class="col-sm-4 text-sm-end">
+            <button type="button" class="btn btn-primary btn-transition" data-bs-dismiss="alert" aria-label="Close">Skjønner</button>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+    </div>
+    <!-- End Cookie Alert -->
 
     <!-- ========== END SECONDARY CONTENTS ========== -->
 
